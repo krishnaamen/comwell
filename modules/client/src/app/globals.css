@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: feSpotLight) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+main,
+.login,
+.signup,
+.bgphoto {
+  background: url(./comwell.jpg) no-repeat center center;
+  background-attachment: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media screen and (max-width: 850px) {
+  main,
+  .login,
+  .signup,
+  .bgphoto {
+    background: none;
+  }
+}
+
+.hoverme:hover {
+  background-color: blue;
+  z-index: 100;
+  color: white;
+  margin-top: 5px;
+}
+
+.search {
+  height: 100vh;
+}
+
+.btn {
+  background-color: blue;
+  color: wheat;
+  border-radius: 20%;
+  height: 35px;
+  width: 50px;
+}
+.bookbtn {
+  margin-bottom: 0;
+}
+
+.hotel {
+  background-color: white;
+}
+.borderbox {
+  border: 1px dashed green;
+  padding: 5px;
+}
+.consent {
+  background-color: yellowgreen;
+  opacity: 0.8;
+}
+.consentbtn {
+  background-color: green;
+  color: white;
+}
+.bgimage {
+  background-color: white;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+.signupbtn {
+  color: black;
+  background-color: lightblue;
+}
+.signupbtn:hover {
+  z-index: 10;
+  background-color: green;
+}
+
+.navtext {
+  color: lightblue;
+}
+
+.navtext ul li :hover {
+  color: blue;
+}
+
+@media screen and (max-width: 700px) {
+  .navtext {
+    color: black;
+  }
+
+  .navtext ul li :hover {
+    color: blue;
+  }
+}
+.white {
+  color: black;
+  background-color: lightblue;
+}
